@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <input type="text" id="box">
+    <p id="sum"></p>
+
+    <button onclick="arrayFunction()">Add array</button>
+    <script>
+        var items = [];
+
+        function arrayFunction() {
+            boxvalue = document.getElementById("box").value
+            items.push(boxvalue);
+            document.getElementById("sum").innerHTML = ("The array contents are: " + items);
+        }
+    </script>
+</body>
+
+</html>

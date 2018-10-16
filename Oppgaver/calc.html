@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <h1>Calculator</h1>
+    <input type="text" id="number1" name="number1">
+    +
+    <input type="text" id="number2" name="number2">
+    <button onclick="myFunction()">Result</button>
+    <p id="sum"></p>
+    <br>
+    <input type="text" id="number3" name="number3">
+    *
+    <input type="text" id="number4" name="number4">
+    <button onclick="multiplyFunction()">Result</button>
+    <p id="sum1"></p>
+    <br>
+    <input type="text" id="number5" name="number5">
+    / 
+    <input type="text" id="number6" name="number6">
+    <button onclick="divideFunction()">Result</button>
+    <p id="sum2"></p>
+    <br>
+    <input type="text" id="number7" name="number7">
+    % 
+    <input type="text" id="number8" name="number8">
+    <button onclick="reminderFunction()">Result</button>
+    <p id="sum3"></p>
+    
+
+    <script>
+        function myFunction() {
+        var a = document.getElementById("number1").value;
+        var b = document.getElementById("number2").value;
+        var c = +a + +b;
+        document.getElementById("sum").innerHTML = "The answer is " + c ;
+        
+    }
+        function multiplyFunction() {
+        var a = document.getElementById("number3").value;
+        var b = document.getElementById("number4").value;
+        var c = parseInt(a*b);
+        document.getElementById("sum1").innerHTML = "The answer is " + c ;
+        
+    }
+     
+     function divideFunction() {
+        var a = document.getElementById("number5").value;
+        var b = document.getElementById("number6").value;
+        var c = parseFloat(a/b);
+        document.getElementById("sum2").innerHTML = "The answer is " + c ;
+     }
+
+     function reminderFunction() {
+        var a = document.getElementById("number7").value;
+        var b = document.getElementById("number8").value;
+        var c = parseInt(a%b);
+        document.getElementById("sum3").innerHTML = "The answer is " + c ;
+     }
+
+
+
+        </script>
+</body>
+</html>
